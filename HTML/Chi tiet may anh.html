@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUÊ MÁY ẢNH ĐÀ Nẵng</title>
+    <link rel="stylesheet" href="/CSS/TUAN1.CSS">
+    <link rel="stylesheet" href="/CSS/SẢN PHẨM.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="Trangchu.html" style="text-decoration: none; color: inherit;">
+        <span>BINBIN</span><br>
+        <small>CAMERA </small>
+      </a>
+    </div>
+    <a></a>
+    <div class="nav">
+      <ul class="navbar">
+        <li>
+          <a href="GIOI_THIEU.HTML">Giới thiệu</a>
+        </li>
+        </li>
+        <li>
+          <a href="#">Dịch vụ cho thuê ▼</a>
+          <ul class="dropdown">
+            <li><a class="dropdown-item" href="THUE_CAMERA.HTML">Thuê Camera (Máy ảnh)</a></li>
+            <li><a class="dropdown-item" href="THUE_LENS.HTML">Thuê Lens (Ống kính)</a></li>
+            <li><a class="dropdown-item" href="THUE_PHU_KIEN.HTML">Thuê Phụ kiện</a></li>
+            <li><a class="dropdown-item" href="THUE_DEN.HTML">Thuê Đèn chụp</a></li>
+            <li><a class="dropdown-item" href="GIMBAL.HTML">Thuê Gimbal</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Mic</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Gopro - Flycam</a></li>
+
+          </ul>
+        </li>
+        <li>
+              
+        </li>
+        <li>
+          <a href="CHINH_SACH.HTML">Chính sách</a>
+        </li>
+        <li>
+          <a href="LIEN_HE.HTML">Liện hệ</a>
+        </li>
+    </div>
+    
+    <div class="nav">
+      <div class="cart">
+        <a href="GIỎ_HÀNG.HTML"><i class="fas fa-shopping-cart"></i>
+            &nbsp;&nbsp;🛒&nbsp;&nbsp;
+        <div class="count">0</div></a>
+      </div>
+      <a href="/HTML/DANGNHAP.HTML"><i class="fas fa-user"></i> <b>Đăng nhập / Đăng ký<b></a>
+    </div>
+  </div>
+
+<!-- tìm kiếm -->
+
+
+<h2>Máy ảnh Nikon Z6 II</h2>
+<div class="product-container">
+    <div class="left">
+        <div class="right">
+        <img src="/logo/logo_nikon.jpeg" class="brand-logo" alt="Nikon Logo">
+        <div class="stars">★★★★★</div>
+        </div>
+
+        <img id="mainImage" class="main-image" src="/ảnh chi tiết/Máy ảnh Nikon Z6 II.jpg" alt="Nikon Z6 II">
+        <div class="thumbnails">
+            <img src="/ảnh chi tiết/Máy ảnh Nikon Z6 II.jpg" alt="thumb1">
+            <img src="/ảnh chi tiết/Máy ảnh Nikon Z6 II1.jpg" alt="thumb2">
+            <img src="/ảnh chi tiết/Máy ảnh Nikon Z6 II 2.jpg" alt="thumb3">
+        </div>
+    </div>
+    <div class="right">
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        
+        <h3>Thông tin nổi bật</h3>
+        <ul>
+            <li>Bộ xử lý hình ảnh EXPEED</li>
+            <li>Cảm biến BSI CMOS định dạng FX 24.5MP</li>
+            <li>Chụp liên tiếp 14fps, ISO 60-51200</li>
+            <li>Video UHD 4K30</li>
+        </ul>
+         <div class="availability-table">
+            <h3>📅 Lịch thuê sản phẩm</h3>
+            <table class="rental-schedule">
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Trạng thái</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="available">
+                        <td>Hôm nay (15/12/2024)</td>
+                        <td><span class="status available">Có sẵn</span></td>
+                      
+                        <td>Có thể thuê ngay</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="rental-price">
+            <span class="price-title">Giá thuê</span>
+            <div class="price-box">
+                <span class="price red">385.000 đ/buổi</span>
+                <span class="price red">550.000 đ/ngày</span>
+                <span class="price-label">Bảng giá</span>
+            </div>
+        </div>
+
+        <button class="rent-button" onclick="addToCart()">Thuê sản phẩm này</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+
+        <div class="suggest">
+    <h3>Gợi ý thuê cùng</h3>
+    <div class="suggest-items">
+        <div class="suggest-item">
+            <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-70mm f2.8G ED.jpg" alt="Lens 24-70mm">
+            <p>Ống kính Nikon AF-S 24-70mm f/2.8G ED</p>
+            <div class="price">
+                <span class="red">140.000 đ/buổi</span><br>
+                <span>200.000 đ/ngày</span>
+            </div>
+        </div>
+        <div class="suggest-item">
+            <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 85mm f1.8 G.jpg" alt="Lens 85mm">
+            <p>Ống kính Nikon AF-S 85mm f/1.8G</p>
+            <div class="price">
+                <span class="red">70.000 đ/buổi</span><br>
+                <span>100.000 đ/ngày</span>
+            </div>
+        </div>
+        <div class="suggest-item">
+            <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 50mm F1.8G.jpg" alt="Lens 50mm">
+            <p>Ống kính Nikon AF-S 50mm f/1.8G</p>
+            <div class="price">
+                <span class="red">42.000 đ/buổi</span><br>
+                <span>60.000 đ/ngày</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="details">
+    <h3>Thông tin chi tiết</h3>
+    <p>Thiết kế của Nikon Z6 II là mẫu máy ảnh mirrorless kế nhiệm của Nikon Z6. Giống như Nikon Z6, Nikon Z6 II được thiết kế hoàn toàn bằng hợp kim Magie tạo độ chắc chắn, bền bỉ mang lại cảm giác thoải mái cho người dùng. Máy ảnh được trang bị màn hình LCD 3.2 inch, 2.1 triệu điểm ảnh kết hợp với các nút bấm thuận tiện trong quá trình sử dụng.</p>
+</div>
+<div class="product-details">
+    <img src="/ảnh chi tiết/Máy ảnh Nikon Z6 II.jpg" alt="Chi tiết Nikon Z6 II" class="detail-image">
+    <p class="detail-title">
+        Cảm biến Full-frame BSI CMOS 24.5MP và bộ xử lý hình ảnh Dual Expeed
+    </p>
+    <p class="detail-text">
+        Máy ảnh mang lại hình ảnh với độ phân giải cao nhờ vào cảm biến Full-frame BSI CMOS 24.5MP. 
+        Cảm biến có thể làm việc trong nhiều điều kiện ánh sáng khác nhau với dải nhạy sáng ISO 100-51200, 
+        kết hợp với tính năng chống rung 5 trục trong thân máy giúp giảm rung, nhiều hơn cho chụp cầm tay sắc nét hơn.
+    </p>
+    <p class="detail-text">
+        Cảm biến này kết hợp với bộ xử lý hình ảnh Dual Expeed 2 làm tăng hiệu suất, cho phép chụp liên tiếp 14 khung hình/giây. 
+        Đồng thời, chi tiết hình ảnh lấy nét, giảm nhiễu, đem đến hình ảnh và độ phân giải cao. 
+        Ở phiên bản Nikon Z6 II, Nikon đã cải tiến khả năng lấy nét tự động nhằm đảm nhiệm tốt hơn những đối tượng chuyển động, bắt nét ngay cả những chủ thể nhỏ hoặc tạm mất dạng giữa ảnh.
+    </p>
+</div>
+<div class="product-details">
+    <img src="/ảnh chi tiết/Cảm biến Full-frame BSI CMOS 24.5MP và bộ xử lý hình ảnh Dual Expeed.png" alt="Chi tiết Nikon Z6 II" class="detail-image">
+    <p class="detail-title">
+        Cảm biến Full-frame BSI CMOS 24.5MP và bộ xử lý hình ảnh Dual Expeed
+    </p>
+    <p class="detail-text">
+        Máy ảnh mang lại hình ảnh với độ phân giải cao nhờ vào cảm biến Full-frame BSI CMOS 24.5MP. 
+        Cảm biến có thể làm việc trong nhiều điều kiện ánh sáng khác nhau với dải nhạy sáng ISO 100-51200, 
+        kết hợp với tính năng chống rung 5 trục trong thân máy giúp giảm rung, nhiều hơn cho chụp cầm tay sắc nét hơn.
+    </p>
+    <p class="detail-text">
+        Cảm biến này kết hợp với bộ xử lý hình ảnh Dual Expeed 2 làm tăng hiệu suất, cho phép chụp liên tiếp 14 khung hình/giây. 
+        Đồng thời, chi tiết hình ảnh lấy nét, giảm nhiễu, đem đến hình ảnh và độ phân giải cao. 
+        Ở phiên bản Nikon Z6 II, Nikon đã cải tiến khả năng lấy nét tự động nhằm đảm nhiệm tốt hơn những đối tượng chuyển động, bắt nét ngay cả những chủ thể nhỏ hoặc tạm mất dạng giữa ảnh.
+    </p>
+
+    <img src="/ảnh chi tiết/Chụp ảnh và quay video 4K 30p.jpg" alt="Nikon Expeed" class="detail-image">
+
+    <p class="detail-title">
+        Hệ thống lấy nét theo pha 273 điểm
+    </p>
+    <p class="detail-text">
+        Nằm trên cảm biến là một dãy 273 điểm lấy nét tự động theo pha bao phủ gần đến hết khung hình theo cả chiều dọc và chiều ngang. 
+        Điều này giúp máy lấy nét nhanh và chính xác, thích hợp cho chụp ảnh tĩnh lẫn quay video. 
+        Hệ thống lấy nét này có thể bao phủ gần như khung hình đảm bảo khả năng bắt nét chính xác với những đối tượng ở góc cạnh khung hình. 
+        Hệ thống hybird AF đặc biệt hữu ích cho việc quay video tốc độ cao mượt mà. 
+        Hệ thống này sẽ tự động chuyển về hệ thống lấy nét theo pha mang lại khả năng lấy nét nhanh chóng, mượt mà trong khi quay.
+    </p>
+
+    <p class="detail-title">
+        Chụp ảnh và quay video 4K 30p
+    </p>
+    <p class="detail-text">
+        Tốc độ chụp liên tiếp 14fps là ấn tượng khi muốn tường lửa 14 khung hình/giây khi sử dụng một điểm AF duy nhất và 12 khung hình/giây khi chọn điểm AF hoặc theo dõi đối tượng. 
+        Nikon Z6 II có khả năng quay video UHD 4K 30p và quay video Full HD 1080p cho phép người dùng thỏa sức sáng tạo. 
+        Nhờ cảm biến và bộ xử lý hình ảnh được kết hợp trong máy ảnh giúp tạo ra những video với độ phân giải cao, hình ảnh sắc nét, chân thực.
+    </p>
+</div>
+<div class="product-details">
+    <img src="/ảnh chi tiết/Máy ảnh Nikon Z6 II 2.jpg" alt="Cổng kết nối Nikon Z6 II" class="detail-image">
+
+    <p class="detail-title">
+        Kết nối SnapBridge
+    </p>
+    <p class="detail-text">
+        Kết nối SnapBridge được tích hợp cho phép truyền tiếp nhanh chóng và nó cũng được sử dụng để cập nhật chương trình của máy ảnh. 
+        Máy ảnh có kết nối Bluetooth và Wi-Fi, giúp trao đổi tập tin dễ dàng với điện thoại thông minh. 
+        Nhờ tính năng này, mọi ảnh chụp có thể xem trực tiếp hình ảnh trên máy và có thể làm việc từ xa một cách dễ dàng.
+    </p>
+
+    <p class="detail-title">
+        Khe cắm thẻ nhớ kép
+    </p>
+    <p class="detail-text">
+        Nikon Z6 II tích hợp khe cắm thẻ nhớ CFexpress Loại B / XQD và một khe cắm SD UHS-II có thể lưu trữ linh hoạt. 
+        Thẻ nhớ CFexpress cho tốc độ đọc ghi cực kỳ nhanh, hỗ trợ quay video 4K trên máy. 
+        Với hai khe thẻ nhớ này, người dùng có thể chụp ảnh / quay video dễ dàng mà không lo về dung lượng.
+    </p>
+</div>
+<div class="product-details">
+    <img src="/ảnh chi tiết/đầu.jpg" alt="Nikon Z6 II Top View" class="detail-image">
+</div>
+
+<script src="/JS/script.js"></script>
+  
+<!-- Bài viết -->
+<div class="section-header">
+  <h2 class="section-title">Bài viết</h2>
+  <a href="#" class="see-more">Xem thêm</a>
+</div>
+
+<div class="post-grid">
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/đánh giá.jpeg" alt="Đánh giá">
+    <span>Đánh giá</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+ <div class="tuanhuy">
+  <footer class="footer">
+  <div class="footer-container"> 
+    <div class="footer-left">
+      <img src="/ẢNH/Screenshot 2025-06-02 230850.png" alt="BINBIN Camera" class="logo1" />
+      <div class="company-info">
+        <p>Công ty TNHH BIN BIN Camera - MST: 0934731557</p>
+        <p>Địa chỉ: Phú Hòa 2 - xã Hòa Nhơn - huyện Hòa Vang - TP. Đà Nẵng</p>
+        <p>SDT: 0345.878.879</p>
+        <p>Email: nguyenvanhuytuan1212@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="download-title">Tải App Trên:</p>
+      <div class="download-buttons">
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="app-btn" /></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="app-btn" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  
+  </div>
+</footer>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

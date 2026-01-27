@@ -1,0 +1,99 @@
+
+.contact-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px 20px 30px;
+  background: #fff;
+}
+
+.contact-item {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+  max-width: 220px;
+}
+
+.contact-item .icon {
+  background-color: #facc15;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.contact-item h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  gap: 40px;
+  justify-content: center;
+  background: #fff;
+}
+
+.map {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.form {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.form h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #facc15;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #eab308;
+}

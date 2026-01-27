@@ -1,0 +1,3727 @@
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUÊ MÁY ẢNH ĐÀ Nẵng</title>
+    <link rel="stylesheet" href="/CSS/TUAN1.CSS">
+    <link rel="stylesheet" href="/CSS/THUE_LENS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="Trangchu.html" style="text-decoration: none; color: inherit;">
+        <span>BINBIN</span><br>
+        <small>CAMERA </small>
+      </a>
+    </div>
+    <a></a>
+    <div class="nav">
+      <ul class="navbar">
+        <li>
+          <a href="GIOI_THIEU.HTML">Giới thiệu</a>
+        </li>
+        </li>
+        <li>
+          <a href="#">Dịch vụ cho thuê ▼</a>
+          <ul class="dropdown">
+            <li><a class="dropdown-item" href="THUE_CAMERA.HTML">Thuê Camera (Máy ảnh)</a></li>
+            <li><a class="dropdown-item" href="THUE_LENS.HTML">Thuê Lens (Ống kính)</a></li>
+            <li><a class="dropdown-item" href="THUE_PHU_KIEN.HTML">Thuê Phụ kiện</a></li>
+            <li><a class="dropdown-item" href="THUE_DEN.HTML">Thuê Đèn chụp</a></li>
+            <li><a class="dropdown-item" href="GIMBAL.HTML">Thuê Gimbal</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Mic</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Gopro - Flycam</a></li>
+
+          </ul>
+        </li>
+        <li>
+              
+        </li>
+        <li>
+          <a href="CHINH_SACH.HTML">Chính sách</a>
+        </li>
+        <li>
+          <a href="LIEN_HE.HTML">Liện hệ</a>
+        </li>
+    </div>
+    
+    <div class="nav">
+      <div class="cart">
+        <a href="GIỎ_HÀNG.HTML"><i class="fas fa-shopping-cart"></i>
+            &nbsp;&nbsp;🛒&nbsp;&nbsp;
+        <div class="count">0</div></a>
+      </div>
+      <a href="/HTML/DANGNHAP.HTML"><i class="fas fa-user"></i> <b>Đăng nhập / Đăng ký<b></a>
+    </div>
+  </div>
+
+<!-- tìm kiếm -->
+
+
+     <div class="filter-container">
+  <div class="filter-row">
+    <select>
+      <option>Thuê Camera (Máy ảnh)</option>
+      <!-- Thêm các lựa chọn khác nếu cần -->
+    </select>
+
+    <select>
+      <option>Tất cả các hãng</option>
+      <option>SONY</option>
+      <option>Canon</option>
+      <option>Nikon</option>
+    </select>
+
+    <select>
+      <option>Giá tăng dần</option>
+      <option>Giá giảm dần</option>
+    </select>
+
+    <div class="search-wrapper">
+      <input type="text" placeholder="Tìm..." />
+      <button type="submit" class="search-btn">🔍</button>
+    </div>
+  </div>
+
+  <div class="brand-filter">
+    <a href="THUE_LENS.HTML" class="brand-btn active" data-brand="all">Tất cả các hãng</a>
+    <a href="LENS_CANON.HTML" class="brand-btn" data-brand="canon"><img src="/logo/canon.jpeg" alt="Canon" /></a>
+    <a href="LENS_SONY.HTML" class="brand-btn" data-brand="sony"><img src="/logo/sony.jpeg" alt="Sony" /></a>
+    <a href="LENS_NIKON.HTML" class="brand-btn" data-brand="nikon"><img src="/logo/logo_nikon.jpeg" alt="Nikon" /></a>
+    <a href="LENS_TAMRON.HTML" class="brand-btn" data-brand="tamron"><img src="/logo/TAMRON.jpeg" alt="Nikon" /></a>
+    <a href="LENS_SIGMA.HTML" class="brand-btn" data-brand="Sigma"><img src="/logo/SIGMA.jpeg" alt="Nikon" /></a>
+  </div>
+
+    </div>
+
+
+    <div class="camera-grid">
+  <!-- Một sản phẩm -->
+       <!-- -----------canon------------------ -->
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/DZOFilm VESPID 6-Lens SET EF Mounts.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/DZOFilm VESPID 6-Lens SET EF Mounts 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">DZOFilm VESPID 6-Lens SET EF Mounts</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">1.000.000</span> đ/buổi<br />
+        <span class="price-gray">1.200.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 135mm f2L USM.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 135mm f2L USM 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 135mm f2L USM</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">105.000</span> đ/buổi<br />
+        <span class="price-gray">150.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 100mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 100mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 100mm f/2.8L Macro IS USM</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">175.000</span> đ/buổi<br />
+        <span class="price-gray">250.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 85mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 85mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 85mm f/1.8 USM (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">50.000</span> đ/buổi<br />
+        <span class="price-gray">70.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 85mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 85mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 85mm f/1.8 USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">50.000</span> đ/buổi<br />
+        <span class="price-gray">70.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/167Cho thuê Canon EF 50mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Thuê máy ảnh Sony Alpha A7S III</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">50.000</span> đ/buổi<br />
+        <span class="price-gray">40.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/167Cho thuê Canon EF 50mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Máy ảnh Sony Alpha A7 Mark IV (BODY 1)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">40.000</span> đ/buổi<br />
+        <span class="price-gray">50.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="sony" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 70-200mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 70-200mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Canon EF 70-200mm f/2.8L IS II USM</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">300.000</span> đ/buổi<br />
+        <span class="price-gray">270.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 70-200mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 70-200mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Canon EF 70-200mm f/2.8L IS II USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">555.000</span> đ/buổi<br />
+        <span class="price-gray">380.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>    
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê CANON EF 70-200MM F.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê CANON EF 70-200MM F1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> CANON EF 70-200MM F/2.8L USM (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">120.000</span> đ/buổi<br />
+        <span class="price-gray">160.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê CANON EF 70-200MM F.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê CANON EF 70-200MM F1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> CANON EF 70-200MM F/2.8L USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">120.000</span> đ/buổi<br />
+        <span class="price-gray">160.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 24-70mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Canon EF 24-70mm f/2.8L II USM (L1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Canon EF 24-70mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Canon EF 24-70mm f/2.8L II USM (L2)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">210.000</span> đ/buổi<br />
+        <span class="price-gray">300.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-70mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 24-70mm f/4L IS USM (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-70mm 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 24-70mm f/4L IS USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-105mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/f4L IS USM (LENS 2).jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 24-105mm f/4L IS USM (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Canon EF 24-105mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/f4L IS USM (LENS 2).jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Canon EF 24-105mm f/4L IS USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Canon EF 17-40mm f4L USM (LENS 1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Canon EF 17-40mm f4L USM (LENS 1) 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Canon EF 17-40mm f/4L USM (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/canon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Canon EF 17-40mm f4L USM (LENS 1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Canon EF 17-40mm f4L USM (LENS 1) 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Canon EF 17-40mm f/4L USM (LENS 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+<!-- ----------------SONY------------------------ -->
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 16-35mm f2.8 GM ( Lens 2).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 16-35mm f2.8 GM ( Lens 2) 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 16-35mm f/2.8 GM ( Lens 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 16-35mm f2.8 GM ( Lens 2).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 16-35mm f2.8 GM ( Lens 2) 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 16-35mm f/2.8 GM ( Lens 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony Vario-Tessar T FE 16-35mm f4 ZA OSS.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony Vario-Tessar T FE 16-35mm f4 ZA OSS 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony Vario-Tessar T* FE 16-35mm f/4 ZA OSS</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 12-24mm f4 G.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 12-24mm f4 G 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 12-24mm f/4 G</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 85mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 85mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 85mm f/1.4 GM</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 85mm.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 85mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony FE 85mm f/1.8</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống Kính Sigma 10-18mm F2.8 DC DN Contemporary (E-Mount).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống Kính Sigma 10-18mm F2.8 DC DN Contemporary (E-Mount)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống Kính Sigma 10-18mm F2.8 DC DN Contemporary (E-Mount)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 24mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 24mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 24mm f/1.4 GM</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho Thuê Ống kính Sony FE 90mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho Thuê Ống kính Sony FE 90mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sony FE 90mm f/2.8 Macro G OSS</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 35mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 35mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 35mm F1.4 ZA</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony FE 50mm f/1.8 ( Lens 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony FE 50mm f/1.8 ( Lens 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony Sonnar T FE 55mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony Sonnar T FE 55mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony Sonnar T* FE 55mm f/1.8 ZA</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony Planar T FE 50mm f1.4 ZA.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony Planar T FE 50mm f1.4 ZA1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony Planar T * FE 50mm f/1.4 ZA</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê ống kính Sony FE 24-70mm f2.8 GM.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê ống kính Sony FE 24-70mm f2.8 GM1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> ống kính Sony FE 24-70mm f/2.8 GM</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống Kính Sony FE 24-70mm f2.8 GM II.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống Kính Sony FE 24-70mm f2.8 GM II1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống Kính Sony FE 24-70mm f/2.8 GM II</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 28mm f2.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony FE 28mm f2 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony FE 28mm f/2</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony E PZ 18-105mm f4 G OSS.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony E PZ 18-105mm f4 G OSS1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony E PZ 18-105mm f/4 G OSS</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sony E PZ 16-50mm F3.5-5.6 OSS.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sony E PZ 16-50mm F3.5-5.6 OSS1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sony E PZ 16-50mm F3.5-5.6 OSS</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sony FE 200-600mm f5.6-6.3 G OSS.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sony FE 200-600mm f5.6-6.3 G OSS1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sony FE 200-600mm f/5.6-6.3 G OSS</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sony FE 70-200mm f2.8 GM OSS (L1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sony FE 70-200mm f2.8 GM OSS (L1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sony FE 70-200mm f/2.8 GM OSS (L1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/sony.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sony FE 70-200mm f2.8 GM OSS (L1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sony FE 70-200mm f2.8 GM OSS (L1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sony FE 70-200mm f/2.8 GM OSS (L1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<!-- -----------------------------NIKON--------------------------- -->
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Nikon AF-s 70-200mm F2.8 ED VR II Nano.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Nikon AF-s 70-200mm F2.8 ED VR II Nano1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Nikon AF-s 70-200mm F2.8 ED VR II Nano</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Nikon AF-S 16-35mm f4 VR Nano3.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Nikon AF-S 16-35mm f4 VR Nano2.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Nikon AF-S 16-35mm f/4 VR Nano2</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Nikon Z 24-70mm f4 S (Nikon Z).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Nikon Z 24-70mm f4 S (Nikon Z)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Nikon Z 24-70mm f/4 S (Nikon Z)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-70mm f2.8G ED.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-70mm f2.8G ED 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Nikon AF-S 24-70mm f/2.8G ED</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-120mm F4G ED VR Nano (LENS 2).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-120mm F4G ED VR Nano (LENS 2)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Nikon AF-S 24-120mm F/4G ED VR Nano (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-120mm F4G ED VR Nano (LENS 2).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 24-120mm F4G ED VR Nano (LENS 2)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Nikon AF-S 24-120mm F/4G ED VR Nano (LENS 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 85mm f1.8 G.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 85mm f1.8 G1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Nikon AF-S 85mm f/1.8 G</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Nikon Z 85mm f1.8 S.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Nikon Z 85mm f1.8 S 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Nikon Z 85mm f/1.8 S</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 50mm F1.8G.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Nikon AF-S 50mm F1.8G1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Nikon AF-S 50mm F/1.8G</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Nikon AIS 50mm f1.2.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Nikon AIS 50mm f1.2 1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Nikon AIS 50mm f/1.2</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê NIKON AF NIKKOR 35MM F2D.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê NIKON AF NIKKOR 35MM F2D1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> NIKON AF NIKKOR 35MM F/2D</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+<!-- ---------------------------tamron-------------------------------- -->
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/TAMRON.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Tamron 28-75mm f2.8 Di III VXD G2 (Nikon Z).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Tamron 28-75mm f2.8 Di III VXD G2 (Nikon Z)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Tamron 28-75mm f/2.8 Di III VXD G2 (Nikon Z)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/TAMRON.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Tamron 28-75mm f12.8 Di III RXD For Sony E(LENS 1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Tamron 28-75mm f2.8 Di III RXD For Sony E(LENS 1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">/Cho thuê Tamron 28-75mm f2.8 Di III RXD For Sony E(LENS 1).jpg</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/TAMRON.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Tamron 28-75mm f12.8 Di III RXD For Sony E(LENS 1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Tamron 28-75mm f2.8 Di III RXD For Sony E(LENS 1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">/Cho thuê Tamron 28-75mm f2.8 Di III RXD For Sony E(LENS 2).jpg</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L1)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Tamron 28-75mm F2.8 Di III VXD G2 For Sony E (L2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Tamron 70-180mm F2.8 Di III VXD.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Tamron 70-180mm F2.8 Di III VXD1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Tamron 70-180mm F2.8 Di III VXD1</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/logo_nikon.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Tamron SP 24-70mm F2.8 (For Canon).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Tamron SP 24-70mm F2.8 (For Canon)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Tamron SP 24-70mm F2.8 (For Canon)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+<!-- -------------------------------sigma----------------------------------- -->
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Ống kính Sigma 35mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Ống kính Sigma 35mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ống kính Sigma 35mm f/1.4 DG HSM Art For Nikon</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 30mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 30mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 30mm F/1.4 DC DN</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 16mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 16mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 16mm f/1.4 DC DN</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sigma 18-50mm f/2.8 DC DN (C) For Sony E (Lens 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sigma 18-50mm f/2.8 DC DN (C) For Sony E (Lens 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 18-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sigma 18-50mm f/2.8 DC DN (C) For Sony E (Lens 3)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24-70mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 24-70mm f/2.8 DG DN ( L1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24-70mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24-70mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 24-70mm f/2.8 DG DN ( L2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 15mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Ống kính Sigma 15mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Ống kính Sigma 15mm f/2.8 EX DG Diagonal Fisheye For Canon EF</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 50mm f/1.4 DG HSM Art For Canon</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 35mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 35mm." alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 35mm f/1.4 DG HSM Art For Canon</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 24mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 24mm f/1.4 DG HSM Art For Canon</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Sigma 85mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Sigma 85mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Sigma 85mm F/1.4 DG HSM Art For Canon</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 17-50mm f/2.8 for Canon (Lens 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 17-50mm f/2.8 for Canon (Lens 2)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/SIGMA.jpeg" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/lens máy ảnh/Cho thuê Sigma 17-50mm1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name"> Sigma 17-50mm f/2.8 for Canon (Lens 1)</h3>
+
+    <div>
+      <p class="price">
+   <span class="price-red">9.385.000</span> đ
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Mua ngay</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a>
+
+
+<!-- TỰ THEM CÁC SẢN PHẨM KHÁC VÀO -->
+    </div>
+  
+<!-- Bài viết -->
+<div class="section-header">
+  <h2 class="section-title">Bài viết</h2>
+  <a href="#" class="see-more">Xem thêm</a>
+</div>
+
+<div class="post-grid">
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/đánh giá.jpeg" alt="Đánh giá">
+    <span>Đánh giá</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+ <div class="tuanhuy">
+  <footer class="footer">
+  <div class="footer-container"> 
+    <div class="footer-left">
+      <img src="/ẢNH/Screenshot 2025-06-02 230850.png" alt="BINBIN Camera" class="logo1" />
+      <div class="company-info">
+        <p>Công ty TNHH BIN BIN Camera - MST: 0934731557</p>
+        <p>Địa chỉ: Phú Hòa 2 - xã Hòa Nhơn - huyện Hòa Vang - TP. Đà Nẵng</p>
+        <p>SDT: 0345.878.879</p>
+        <p>Email: nguyenvanhuytuan1212@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="download-title">Tải App Trên:</p>
+      <div class="download-buttons">
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="app-btn" /></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="app-btn" /></a>
+      </div>
+    </div>
+  </div>
+
+  
+
+</footer>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

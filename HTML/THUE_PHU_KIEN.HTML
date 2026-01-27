@@ -1,0 +1,1206 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUÊ MÁY ẢNH ĐÀ Nẵng</title>
+    <link rel="stylesheet" href="/CSS/TUAN1.CSS">
+    <link rel="stylesheet" href="/CSS/THUE_CAMARA.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="Trangchu.html" style="text-decoration: none; color: inherit;">
+        <span>BINBIN</span><br>
+        <small>CAMERA </small>
+      </a>
+    </div>
+    <a></a>
+    <div class="nav">
+      <ul class="navbar">
+        <li>
+          <a href="GIOI_THIEU.HTML">Giới thiệu</a>
+        </li>
+        </li>
+        <li>
+          <a href="#">Dịch vụ cho thuê ▼</a>
+          <ul class="dropdown">
+            <li><a class="dropdown-item" href="THUE_CAMERA.HTML">Thuê Camera (Máy ảnh)</a></li>
+            <li><a class="dropdown-item" href="THUE_LENS.HTML">Thuê Lens (Ống kính)</a></li>
+            <li><a class="dropdown-item" href="THUE_PHU_KIEN.HTML">Thuê Phụ kiện</a></li>
+            <li><a class="dropdown-item" href="THUE_DEN.HTML">Thuê Đèn chụp</a></li>
+            <li><a class="dropdown-item" href="GIMBAL.HTML">Thuê Gimbal</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Mic</a></li>
+            <li><a class="dropdown-item" href="#">Thuê Gopro - Flycam</a></li>
+
+          </ul>
+        </li>
+        <li>
+              
+        </li>
+        <li>
+          <a href="CHINH_SACH.HTML">Chính sách</a>
+        </li>
+        <li>
+          <a href="LIEN_HE.HTML">Liện hệ</a>
+        </li>
+    </div>
+    
+    <div class="nav">
+      <div class="cart">
+        <a href="GIỎ_HÀNG.HTML"><i class="fas fa-shopping-cart"></i>
+            &nbsp;&nbsp;🛒&nbsp;&nbsp;
+        <div class="count">0</div></a>
+      </div>
+      <a href="/HTML/DANGNHAP.HTML"><i class="fas fa-user"></i> <b>Đăng nhập / Đăng ký<b></a>
+    </div>
+  </div>
+<!-- tìm kiếm -->
+
+
+     <div class="filter-container">
+  <div class="filter-row">
+    <select>
+      <option>phụ kiện máy ảnh</option>
+      <!-- Thêm các lựa chọn khác nếu cần -->
+    </select>
+
+    <select>
+      <option>Tất cả các hãng</option>
+      <option>Thẻ Nhớ</option>
+      <option>Chân máy</option>
+      <option>Chân đèn</option>
+      <option>Gàm chuyển </option>
+    </select>
+
+    <select>
+      <option>Giá tăng dần</option>
+      <option>Giá giảm dần</option>
+    </select>
+
+    <div class="search-wrapper">
+      <input type="text" placeholder="Tìm..." />
+      <button type="submit" class="search-btn">🔍</button>
+    </div>
+  </div>
+
+  <div class="brand-filter">
+    <a href="" class="brand-btn active" data-brand="all">Tất cả các hãng</a>
+  </div>
+    </div>
+
+
+    <div class="camera-grid">
+  <!-- Một sản phẩm -->
+
+<!-- ---------------------- Phụ kiện máy ảnh--------------------------- -->
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Leofoto Ranger - LS-284CEX.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Leofoto Ranger - LS-284CEX1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Leofoto Ranger - LS-284CEX1</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Ngàm Chuyển Đổi Nikon FTZ Mark II.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Ngàm Chuyển Đổi Nikon FTZ Mark II1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ngàm Chuyển Đổi Nikon FTZ Mark II</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân máy Benro TSL08AN00.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân máy Benro TSL08AN001.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân máy Benro TSL08AN00
+</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 2.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 21.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 2</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+   
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 2.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 21.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân Đèn INOX Jinbei CK-1 C-Stand - CHÂN 1</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+ 
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Canon EF-EOS R (N1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Canon EF-EOS R (N1).jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ngàm chuyển Canon EF-EOS R (N1)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+ 
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Canon EF-EOS R (N1).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Canon EF-EOS R (N1).jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ngàm chuyển Canon EF-EOS R (N1)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+ 
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Sigma MC-11 ( EF-Mount to Sony E).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Ngàm chuyển Sigma MC-11 ( EF-Mount to Sony E)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Ngàm chuyển Sigma MC-11 ( EF-Mount to Sony E)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+ 
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/DÙ PHẢN VÀ VẢI SOFTBOX 130CM 16 CẠNH.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/DÙ PHẢN VÀ VẢI SOFTBOX 130CM 16 CẠNH1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">DÙ PHẢN VÀ VẢI SOFTBOX 130CM 16 CẠNH</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/CHÂN ĐÈN QUAY PHIM, CHỤP ẢNH PT2500S.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/CHÂN ĐÈN QUAY PHIM, CHỤP ẢNH PT2500S1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">CHÂN ĐÈN QUAY PHIM, CHỤP ẢNH PT2500S</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+ 
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân máy Benro iFoto Aluminum - FIF28AIB2.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân máy Benro iFoto Aluminum - FIF28AIB21.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân máy Benro iFoto Aluminum - FIF28AIB2</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+      <img src="/logo/" alt="Nikon" class="brand-logo" />
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/CHÂN MÁY BENRO A550FN1.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/CHÂN MÁY BENRO A550FN11.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">CHÂN MÁY BENRO A550FN1</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân máy ảnh Benro A350.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân máy ảnh Benro A3501.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân máy ảnh Benro A350</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Chân máy Beike Q999S.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Chân máy Beike Q999S1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Chân máy Beike Q999S</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Sandisk SD 32Gb 90Mb.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Sandisk SD 32Gb 90Mb.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Sandisk SD 32Gb 90Mb/s</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Sandisk Ultra SDHC 16GB 48MB.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Sandisk Ultra SDHC 16GB 48MB1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Sandisk Ultra SDHC 16GB 48MB/s</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Sandisk Ultra SDHC 16GB 48MB.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Sandisk Ultra SDHC 16GB 48MB1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Sandisk Ultra SDHC 16GB 48MB/s</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Thẻ nhớ Sony 64GB 277MB.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Thẻ nhớ Sony 64GB 277MB1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Thẻ nhớ Sony 64GB 277MB/s UHS-II SDXC</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Thẻ nhớ SDXC Sony 64GB 300MB.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Thẻ nhớ SDXC Sony 64GB 300MB1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Thẻ nhớ SDXC Sony 64GB 300MB/s</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Thẻ nhớ Sandisk Pro 64GB 170MB.jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Thẻ nhớ Sandisk Pro 64GB 170MB1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Thẻ nhớ Sandisk Pro 64GB 170MB/s</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+
+<a href="#" class="camera-card-link">
+  <div class="camera-card flip-card">
+    <div class="brand-rating">
+
+      <span class="stars">★★★★★</span>
+    </div>
+
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/PHỤ KIỆN/Balo Sony Backpack 2 (1Body, 3Lens).jpg" alt="Mặt trước" class="camera-img" />
+      </div>
+      <div class="flip-back">
+        <img src="/PHỤ KIỆN/Balo Sony Backpack 2 (1Body, 3Lens)1.jpg" alt="Mặt sau" class="camera-img" />
+      </div>
+    </div>
+
+    <h3 class="camera-name">Balo Sony Backpack 2 (1Body, 3Lens)</h3>
+
+    <div>
+      <p class="price">
+        <span class="price-red">385.000</span> đ/buổi<br />
+        <span class="price-gray">550.000</span> đ/ngày
+      </p>
+      <button class="rent-btn" onclick="addToCart()">Thuê</button>
+<script>
+function addToCart() {
+    Swal.fire({
+        title: '🎉 Đã thêm vào giỏ hàng!',
+        text: 'Sản phẩm của bạn đã được thêm vào giỏ hàng.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2000,
+        background: '#fefefe',
+        color: '#333',
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+}
+</script>
+    </div>
+  </div>
+</a> 
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<!-- Bài viết -->
+<div class="section-header">
+  <h2 class="section-title">Bài viết</h2>
+  <a href="#" class="see-more">Xem thêm</a>
+</div>
+
+<div class="post-grid">
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/đánh giá.jpeg" alt="Đánh giá">
+    <span>Đánh giá</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/hướng dẫn ảnh.jpeg" alt="Hướng dẫn">
+    <span>Hướng dẫn</span>
+  </div>
+  <div class="post-item">
+    <img src="/ẢNH/bản tin.jpeg" alt="Bản tin">
+    <span>Bản tin</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+ <div class="tuanhuy">
+  <footer class="footer">
+  <div class="footer-container"> 
+    <div class="footer-left">
+      <img src="/ẢNH/Screenshot 2025-06-02 230850.png" alt="BINBIN Camera" class="logo1" />
+      <div class="company-info">
+        <p>Công ty TNHH BIN BIN Camera - MST: 0934731557</p>
+        <p>Địa chỉ: Phú Hòa 2 - xã Hòa Nhơn - huyện Hòa Vang - TP. Đà Nẵng</p>
+        <p>SDT: 0345.878.879</p>
+        <p>Email: nguyenvanhuytuan1212@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="download-title">Tải App Trên:</p>
+      <div class="download-buttons">
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="app-btn" /></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="app-btn" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  
+  </div>
+</footer>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

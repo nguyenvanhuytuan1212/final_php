@@ -1,0 +1,46 @@
+.policy {
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.policy h2,
+.policy h3,
+.policy p,
+.policy li,
+.policy em,
+.policy strong {
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.policy h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.policy h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.policy p {
+  margin-bottom: 1rem;
+}
+
+.policy ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.policy ul li {
+  margin-bottom: 0.5rem;
+}
+
+.facebook-icon{
+  width: ;
+}

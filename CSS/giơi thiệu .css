@@ -1,0 +1,54 @@
+.about {
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: normal; /* chữ thường không in đậm */
+  text-transform: none; /* không viết hoa */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 100%;
+}
+
+/* Tiêu đề */
+.about h2 {
+  font-size: 1.75rem;
+  font-weight: normal; /* bỏ in đậm */
+  margin-bottom: 1rem;
+  text-transform: none; /* giữ chữ thường */
+}
+
+/* Dòng "Bạn là ..." */
+.about .fw-bold {
+  font-weight: normal; /* bỏ in đậm */
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  text-transform: none;
+}
+
+/* Danh sách */
+.about ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about ul li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* Đoạn nghiêng và đậm */
+.about p em strong {
+  font-style: normal;      /* bỏ nghiêng */
+  font-weight: normal;     /* bỏ đậm */
+  font-size: 1.05rem;
+  color: #444;
+  text-transform: none;
+}
