@@ -1,10 +1,14 @@
+* {
+  font-family: 'Roboto', sans-serif !important;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   color: #222;
   margin: 0;
   padding: 0;
   margin-top: 50px;
- 
 }
 
 /* Header */
@@ -17,6 +21,8 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   width: 1500px;
   margin: 0 auto;
+  height: 85px;
+  /* Fixed height for consistency */
 }
 
 .logo {
@@ -26,6 +32,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #000;
+  text-decoration: none;
 }
 
 .logo span {
@@ -57,15 +64,17 @@ body {
   background-color: #ffffff;
   display: flex;
   padding: 10px 20px;
+  margin: 0;
+  list-style: none;
 }
 
-.navbar > li {
+.navbar>li {
   list-style: none;
   margin-right: 30px;
   position: relative;
 }
 
-.navbar > li > a {
+.navbar>li>a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -81,12 +90,14 @@ body {
   top: 100%;
   left: 0;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   z-index: 10;
   font-size: 20px;
   text-align: left;
-background: linear-gradient(to right, #ffffff, #ffffff);
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown li {
@@ -101,7 +112,7 @@ background: linear-gradient(to right, #ffffff, #ffffff);
 }
 
 .dropdown li a:hover {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 .dropdown-item {
@@ -118,6 +129,7 @@ background: linear-gradient(to right, #ffffff, #ffffff);
   font-size: 18px;
   color: #111;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cart .count {
@@ -201,7 +213,6 @@ background: linear-gradient(to right, #ffffff, #ffffff);
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   justify-content: center;
-
 }
 
 .item img {
@@ -382,7 +393,6 @@ ul {
 }
 
 p {
-  /* font-style: italic; */
   margin-bottom: 30px;
 }
 
@@ -394,9 +404,66 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tuanhuy {
   width: 100%;
+}
+
+/* User Section additions to match current header.php if possible */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.user-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 100;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.user-dropdown:hover .user-menu {
+  display: block;
+}
+
+.user-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.user-menu li a:hover {
+  background: #f1f1f1;
 }

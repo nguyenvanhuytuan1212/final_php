@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Tools - BinBinCamera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .tool-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .tool-card h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tool-card .icon {
+            font-size: 32px;
+            margin-right: 15px;
+        }
+        
+        .tool-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .tool-card ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .tool-card ul li {
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box p {
+            color: #856404;
+            line-height: 1.6;
+        }
+        
+        code {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛠️ Database Tools</h1>
+            <p>Công cụ quản lý Database - BinBinCamera</p>
+        </div>
+        
+        <div class="content">
+            <!-- Tool 1: Reset Database -->
+            <div class="tool-card">
+                <h2>
+                    <span class="icon">🔧</span>
+                    Reset Database
+                    <span class="badge">KHUYÊN DÙNG</span>
+                </h2>
+                <p>
+                    Công cụ tự động xử lý lại toàn bộ cấu trúc database. File này sẽ:
+                </p>
+                <ul>
+                    <li>✅ Kiểm tra và tạo các bảng nếu chưa có</li>
+                    <li>✅ Thêm các cột thiếu vào bảng hiện có</li>
+                    <li>✅ Tạo/Reset tài khoản admin (admin/admin123)</li>
+                    <li>✅ Hiển thị chi tiết từng bước migration</li>
+                    <li>✅ KHÔNG xóa dữ liệu cũ</li>
+                </ul>
+                <a href="reset_database.php" class="btn">🚀 Chạy Migration</a>
+            </div>
+            
+            <!-- Tool 2: Add Product Details -->
+            <div class="tool-card">
+                <h2>
+                    <span class="icon">📦</span>
+                    Add Product Details Columns
+                </h2>
+                <p>
+                    Thêm các cột mô tả chi tiết cho bảng sản phẩm:
+                </p>
+                <ul>
+                    <li>📝 <code>description</code> - Mô tả ngắn</li>
+                    <li>📄 <code>detailed_description</code> - Mô tả chi tiết</li>
+                    <li>🖼️ <code>detail_image_1</code> đến <code>detail_image_4</code> - Ảnh chi tiết</li>
+                </ul>
+                <a href="run_migration.php" class="btn btn-secondary">▶️ Chạy Migration</a>
+            </div>
+            
+            <!-- Tool 3: View README -->
+            <div class="tool-card">
+                <h2>
+                    <span class="icon">📖</span>
+                    Hướng dẫn sử dụng
+                </h2>
+                <p>
+                    Xem hướng dẫn chi tiết về cách sử dụng các công cụ database, cấu trúc bảng, và troubleshooting.
+                </p>
+                <a href="README.md" class="btn" target="_blank">📚 Xem README</a>
+            </div>
+            
+            <!-- Warning Box -->
+            <div class="warning-box">
+                <h3>⚠️ Lưu ý quan trọng</h3>
+                <p>
+                    <strong>Tài khoản admin mặc định:</strong><br>
+                    Username: <code>admin</code><br>
+                    Password: <code>admin123</code><br><br>
+                    Vui lòng đổi mật khẩu ngay sau khi đăng nhập lần đầu!
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="../HTML/trang_chu.php" class="btn">🏠 Về trang chủ</a>
+                <a href="../actions/quan_ly_san_pham.php" class="btn" style="margin-left: 10px;">📦 Quản lý sản phẩm</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
