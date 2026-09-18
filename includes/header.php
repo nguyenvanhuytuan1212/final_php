@@ -16,7 +16,7 @@ if(isset($_SESSION['cart'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THUÊ MÁY ẢNH ĐÀ Nẵng</title>
     <!-- Default CSS -->
-    <link rel="stylesheet" href="../CSS/tuan2.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -58,7 +58,7 @@ if(isset($_SESSION['cart'])) {
           </ul>
         </li>
         <li>
-          <a href="chinh_sac.php">Chính sách</a>
+          <a href="chinh_sach.php">Chính sách</a>
         </li>
         <li>
           <a href="lien_he.php">Liên hệ</a>

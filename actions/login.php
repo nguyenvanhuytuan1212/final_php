@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($login_input) || empty($password)) {
         $_SESSION['login_error'] = "Vui lòng nhập thông tin đăng nhập và mật khẩu.";
-        header("Location: ../HTML/dang_nhap.php");
+        header("Location: ../pages/dang_nhap.php");
         exit();
     }
 
@@ -29,16 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['role'] = $row['role']; // Lưu quyền hạn vào session
 
             if ($row['role'] == 'admin') {
-                header("Location: ../HTML/dashboard.php"); // Chuyển hướng Admin đến Dashboard
+                header("Location: ../admin/dashboard.php"); // Chuyển hướng Admin đến Dashboard
             } else {
-                header("Location: ../HTML/trang_chu.php"); // Chuyển hướng User thường
+                header("Location: ../pages/trang_chu.php"); // Chuyển hướng User thường
             }
             exit();
         }
     }
 
     $_SESSION['login_error'] = "Thông tin đăng nhập hoặc mật khẩu không đúng.";
-    header("Location: ../HTML/dang_nhap.php");
+    header("Location: ../pages/dang_nhap.php");
     exit();
 }
 ?>

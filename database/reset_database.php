@@ -511,8 +511,8 @@ ini_set('display_errors', 1);
                 }
                 
                 echo '<p style="margin-top: 20px;">🚀 Database đã sẵn sàng sử dụng!</p>';
-                echo '<a href="../HTML/trang_chu.php" class="btn">Về trang chủ</a>';
-                echo '<a href="../actions/quan_ly_san_pham.php" class="btn" style="margin-left: 10px;">Quản lý sản phẩm</a>';
+                echo '<a href="../pages/trang_chu.php" class="btn">Về trang chủ</a>';
+                echo '<a href="../admin/quan_ly_san_pham.php" class="btn" style="margin-left: 10px;">Quản lý sản phẩm</a>';
                 echo '</div>';
             } else {
                 echo '<div class="step error">';

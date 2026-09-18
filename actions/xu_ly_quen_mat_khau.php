@@ -11,13 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 1. Validate input
     if (empty($username) || empty($email) || empty($new_password)) {
         $_SESSION['error'] = "Vui lòng điền đầy đủ thông tin.";
-        header("Location: ../HTML/quen_mat_khau.php");
+        header("Location: ../pages/quen_mat_khau.php");
         exit();
     }
 
     if ($new_password !== $confirm_password) {
         $_SESSION['error'] = "Mật khẩu xác nhận không khớp.";
-        header("Location: ../HTML/quen_mat_khau.php");
+        header("Location: ../pages/quen_mat_khau.php");
         exit();
     }
 
@@ -36,14 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($update_stmt->execute()) {
             $_SESSION['success_message'] = "Đổi mật khẩu thành công! Vui lòng đăng nhập bằng mật khẩu mới.";
-            header("Location: ../HTML/dang_nhap.php");
+            header("Location: ../pages/dang_nhap.php");
         } else {
             $_SESSION['error'] = "Lỗi hệ thống, vui lòng thử lại sau.";
-            header("Location: ../HTML/quen_mat_khau.php");
+            header("Location: ../pages/quen_mat_khau.php");
         }
     } else {
         $_SESSION['error'] = "Tên đăng nhập hoặc Email không chính xác.";
-        header("Location: ../HTML/quen_mat_khau.php");
+        header("Location: ../pages/quen_mat_khau.php");
     }
     exit();
 }

@@ -22,7 +22,7 @@ if ($result_check->num_rows > 0) {
         echo "<h1>Đã reset tài khoản Admin thành công!</h1>";
         echo "<p>User: <b>$username</b></p>";
         echo "<p>Pass: <b>$password</b></p>";
-        echo "<p><a href='HTML/dang_nhap.php'>Bấm vào đây để đăng nhập</a></p>";
+        echo "<p><a href='pages/dang_nhap.php'>Bấm vào đây để đăng nhập</a></p>";
     } else {
         echo "Lỗi: " . $stmt_update->error;
     }
@@ -36,7 +36,7 @@ if ($result_check->num_rows > 0) {
         echo "<h1>Đã tạo tài khoản Admin thành công!</h1>";
         echo "<p>User: <b>$username</b></p>";
         echo "<p>Pass: <b>$password</b></p>";
-        echo "<p><a href='HTML/dang_nhap.php'>Bấm vào đây để đăng nhập</a></p>";
+        echo "<p><a href='pages/dang_nhap.php'>Bấm vào đây để đăng nhập</a></p>";
     } else {
         echo "Lỗi: " . $stmt_insert->error;
     }

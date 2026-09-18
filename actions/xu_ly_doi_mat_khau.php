@@ -4,7 +4,7 @@ include '../includes/db_connect.php';
 
 // 1. Kiểm tra xem người dùng đã đăng nhập chưa
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../HTML/dang_nhap.php");
+    header("Location: ../pages/dang_nhap.php");
     exit();
 }
 
@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 2. Validate input
     if (empty($current_password) || empty($new_password) || empty($confirm_password)) {
         $_SESSION['password_error'] = "Vui lòng điền đầy đủ các trường.";
-        header("Location: ../HTML/change_password.php");
+        if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') { header("Location: ../admin/admin_change_password.php"); } else { header("Location: ../pages/change_password.php"); }
         exit();
     }
 
     if ($new_password !== $confirm_password) {
         $_SESSION['password_error'] = "Mật khẩu mới không khớp.";
-        header("Location: ../HTML/change_password.php");
+        if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') { header("Location: ../admin/admin_change_password.php"); } else { header("Location: ../pages/change_password.php"); }
         exit();
     }
 
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    header("Location: ../HTML/change_password.php");
+    if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') { header("Location: ../admin/admin_change_password.php"); } else { header("Location: ../pages/change_password.php"); }
     exit();
 }
 ?>

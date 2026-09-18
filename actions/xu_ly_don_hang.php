@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
-    header("Location: quan_ly_don_hang.php");
+    header("Location: ../admin/quan_ly_don_hang.php");
     exit();
 }
 ?>

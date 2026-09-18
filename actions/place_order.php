@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Kiểm tra giỏ hàng
     if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
         $_SESSION['error'] = "Giỏ hàng trống!";
-        header("Location: ../HTML/gio_hang.php");
+        header("Location: ../pages/gio_hang.php");
         exit();
     }
 
@@ -124,12 +124,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // 3. Xóa giỏ hàng và chuyển hướng đến trang thanh toán
         unset($_SESSION['cart']);
         // $_SESSION['success_msg'] = "Đặt hàng thành công! Mã đơn: #$order_id"; // Không cần set session msg ở đây nữa, trang kia sẽ lo
-        header("Location: ../HTML/thanh_toan_qr.php?order_id=" . $order_id);
+        header("Location: ../pages/thanh_toan_qr.php?order_id=" . $order_id);
         exit();
     } else {
         $_SESSION['error'] = "Lỗi hệ thống: " . $conn->error;
         // Quay lại trang form nhập liệu nếu lỗi (hiện tại là dat_hang_thanh_cong.php)
-        header("Location: ../HTML/dat_hang_thanh_cong.php"); 
+        header("Location: ../pages/dat_hang_thanh_cong.php"); 
         exit();
     }
 }

@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             $_SESSION['success_message'] = "Đăng ký thành công! Vui lòng đăng nhập.";
-            header("Location: ../HTML/dang_nhap.php");
+            header("Location: ../pages/dang_nhap.php");
             exit();
         } else {
             $errors[] = "Lỗi hệ thống: " . $conn->error;
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($errors)) {
         $_SESSION['register_errors'] = $errors;
-        header("Location: ../HTML/dang_ky.php");
+        header("Location: ../pages/dang_ky.php");
         exit();
     }
 }

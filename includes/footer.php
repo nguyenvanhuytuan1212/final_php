@@ -3,7 +3,7 @@
   <footer class="footer">
   <div class="footer-container">
     <div class="footer-left">
-      <img src="../anh/Screenshot 2025-06-02 230850.png" alt="BINBIN Camera" class="logo1" />
+      <img src="../assets/images/banners/logo_footer.png" alt="BINBIN Camera" class="logo1" />
       <div class="company-info">
         <p>Công ty TNHH BIN BIN Camera - MST: 0934731557</p>
         <p>Địa chỉ: Phú Hòa 2 - xã Hòa Nhơn - huyện Hòa Vang - TP. Đà Nẵng</p>

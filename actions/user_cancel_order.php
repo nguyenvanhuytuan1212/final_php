@@ -3,7 +3,7 @@ session_start();
 include '../includes/db_connect.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../HTML/dang_nhap.php");
+    header("Location: ../pages/dang_nhap.php");
     exit();
 }
 
@@ -35,6 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-header("Location: ../HTML/lich_su_thue.php");
+header("Location: ../pages/lich_su_thue.php");
 exit();
 ?>

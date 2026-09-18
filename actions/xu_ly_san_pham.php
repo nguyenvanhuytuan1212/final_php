@@ -101,8 +101,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($action == 'add') {
             // Mặc định ảnh nếu không upload
-            if(!$image_path) $image_path = "../logo/logo_nikon.jpeg"; 
-            if(!$image_back_path) $image_back_path = "../logo/logo_nikon.jpeg";
+            if(!$image_path) $image_path = "../assets/images/logo/logo_nikon.jpeg"; 
+            if(!$image_back_path) $image_back_path = "../assets/images/logo/logo_nikon.jpeg";
 
             $sql = "INSERT INTO products (name, category, brand, price_session, price_day, rental_status, image, image_back, description, detailed_description, detail_image_1, detail_image_2, detail_image_3, detail_image_4) 
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -181,19 +181,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     
     if ($action == 'delete') {
-        $id = $_POST['id'];
-        // TODO: Thêm code xóa file ảnh cũ trên server để giải phóng dung lượng
-        // $stmt_get_img = $conn->prepare("SELECT image, image_back FROM products WHERE id=?"); ...
-        // unlink($image_path);
-
-        $sql = "DELETE FROM products WHERE id=?";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("i", $id);
+        $id = intval($_POST['id']);
         
-        if ($stmt->execute()) {
-            $_SESSION['msg'] = "Đã xóa sản phẩm!";
-        } else {
-            $_SESSION['error'] = "Lỗi xóa: " . $conn->error;
+        try {
+            // 1. Xóa trong chi tiết đơn hàng (order_details) để tránh lỗi Foreign Key Constraint
+            $stmt_od = $conn->prepare("DELETE FROM order_details WHERE product_id = ?");
+            if ($stmt_od) {
+                $stmt_od->bind_param("i", $id);
+                $stmt_od->execute();
+                $stmt_od->close();
+            }
+
+            // 2. Xóa sản phẩm
+            $sql = "DELETE FROM products WHERE id = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("i", $id);
+            
+            if ($stmt->execute()) {
+                $_SESSION['msg'] = "Đã xóa sản phẩm thành công!";
+            } else {
+                $_SESSION['error'] = "Lỗi xóa: " . $conn->error;
+            }
+            $stmt->close();
+        } catch (mysqli_sql_exception $e) {
+            $_SESSION['error'] = "Không thể xóa sản phẩm do lỗi ràng buộc: " . $e->getMessage();
         }
     }
 
@@ -215,10 +226,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     
     // Redirect về trang admin
-    header("Location: quan_ly_san_pham.php");
+    header("Location: ../admin/quan_ly_san_pham.php");
     exit();
 } else {
-    header("Location: quan_ly_san_pham.php");
+    header("Location: ../admin/quan_ly_san_pham.php");
     exit();
 }
 ?>

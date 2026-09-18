@@ -1,0 +1,266 @@
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.camera-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.camera-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.brand-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.brand-logo {
+  height: 20px;
+  object-fit: contain;
+}
+
+.stars {
+  color: #ffb703;
+  font-size: 14px;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  margin-bottom: 15px;
+}
+
+.camera-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.camera-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 10px;
+  min-height: 48px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.price-red {
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.price-gray {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.rent-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: auto;
+}
+
+.rent-btn:hover {
+  background-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+
+
+
+.filter-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  background: var(--bg-soft);
+  padding: 20px;
+  border-radius: var(--radius);
+  align-items: center;
+}
+
+.filter-row select,
+.filter-row input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: var(--transition);
+}
+
+.filter-row select:focus,
+.filter-row input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+.search-wrapper {
+  display: flex;
+}
+
+.search-wrapper input {
+  flex: 1;
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+.search-btn {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-btn:hover {
+  background: var(--primary);
+}
+
+.brand-filter {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.brand-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.brand-btn:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.brand-btn.active {
+  border-color: var(--primary);
+  background: rgba(230, 57, 70, 0.05);
+}
+
+.brand-btn img {
+  height: 20px;
+  object-fit: contain;
+}
+
+.camera-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Responsive cho điện thoại và máy tính bảng */
+@media (max-width: 768px) {
+  .camera-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+  .camera-card {
+    padding: 12px;
+  }
+  .flip-inner {
+    height: 150px;
+  }
+  .camera-name {
+    font-size: 14px;
+    min-height: 40px;
+  }
+  .filter-row {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .brand-filter {
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .brand-btn {
+    padding: 6px 14px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}

@@ -157,5 +157,5 @@ if ($check_admin->num_rows == 0) {
 }
 
 echo "<h3>Cài đặt cơ sở dữ liệu hoàn tất!</h3>";
-echo "<a href='../HTML/trang_chu.php'>Về trang chủ</a>";
+echo "<a href='../pages/trang_chu.php'>Về trang chủ</a>";
 ?>
